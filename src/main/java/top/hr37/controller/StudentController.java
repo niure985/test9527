@@ -18,6 +18,10 @@ public class StudentController {
     private StudentService service;
     private ModelAndView mv = new ModelAndView();
 
+    public void setService(StudentService service) {
+        this.service = service;
+    }
+
     @RequestMapping("/addStudent.do")
     public ModelAndView addStudent(Student stu){
 
